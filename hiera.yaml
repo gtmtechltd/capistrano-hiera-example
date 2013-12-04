@@ -1,0 +1,12 @@
+---
+:backends:
+  - yaml
+
+:hierarchy:
+  - environments/%{environment}/%{namespace}/%{task}
+  - environments/%{environment}/%{namespace}
+  - environments/%{environment}/default
+  - environments/default
+
+:yaml:
+   :datadir: ./
